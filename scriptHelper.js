@@ -31,11 +31,8 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 }
 
 async function myFetch() {
-    let planetsReturned;
-
-    planetsReturned = await fetch().then( function(response) {
-        });
-
+    let response = await fetch('https://handlers.education.launchcode.org/static/planets.json');
+    let planetsReturned = await response.json();
     return planetsReturned;
 }
 
