@@ -5,6 +5,7 @@ window.addEventListener("load", function() {
 
     const form = document.querySelector('form');
     const list = document.getElementById('faultyItems');
+    list.style.visibility = 'hidden';
     
     //These define variables to hold the user input on the form. They do not equal the submitted value, those are down below
     const pilotInput = document.getElementById('pilot-input');
